@@ -15,8 +15,8 @@ on:
 
 jobs:
   test_python:
-    name: ${{ matrix.name }}
-    runs-on: ${{ matrix.os }}
+    name: pypy-3.8
+    runs-on: ubuntu-latest
 #    strategy:
 #      matrix:
 #        include:
