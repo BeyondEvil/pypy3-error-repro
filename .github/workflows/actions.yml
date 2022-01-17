@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: pypy-3.8
+      - name: lookit
+        run: ls -la && ls -la tox/
       - name: Install tox
         run: python -m pip install -e tox/
       - name: Test with tox
