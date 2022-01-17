@@ -41,4 +41,4 @@ jobs:
           string: '${{ matrix.name }}'
           split-by: '-'
       - name: Test with tox
-        run: python -m tox -e ${{ steps.split-matrix-name.outputs._0}}-cov
+        run: python -m tox -e ${{ steps.split-matrix-name.outputs._0}}
